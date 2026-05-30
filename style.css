@@ -58,11 +58,11 @@ button{
 }
 
 .nombre-empleado {
-    color: red !important;
-    font-size: 32px !important;
-    font-weight: bold !important;
-    text-align: center !important;
-}
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}   
 
 .footer {
     text-align: center;
