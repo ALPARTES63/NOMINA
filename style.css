@@ -19,7 +19,7 @@ body{
 input{
     width: 90%;
     padding: 12px;
-    margin-top: 10px;
+    margin-top: 15px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -28,13 +28,19 @@ input{
 
 button{
 
-    width: 60%;
+    width: 90%;
     padding: 12px;
     margin-top: 20px;
     background: #0078D7;
     color: white;
     border: none;
     cursor: pointer;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 5px;
 
 }
 
