@@ -11,6 +11,8 @@
 
     <script src="https://cdn.sheetjs.com/xlsx-0.20.0/package/dist/xlsx.full.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
 </head>
 
 <body>
@@ -32,6 +34,11 @@
         </button>
 
         <div id="resultado"></div>
+        
+        <button id="btnPdf" onclick="descargarPDF()" style="display:none;">
+            Descargar PDF
+        
+        </button>
         
         <footer class="footer">
             Portal de Desprendible de Nomina ALPARTES S.A.S
