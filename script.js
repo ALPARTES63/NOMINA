@@ -222,23 +222,23 @@ async function descargarPDF(){
 
     // DATOS EMPLEADO
     pdf.setFont("helvetica", "bold");
-    pdf.text("Empleado:", 20, 70);
+    pdf.text("Empleado:", 20, 95);
 
     pdf.setFont("helvetica", "normal");
-    pdf.text(empleadoActual.NOMBRE, 50, 70);
+    pdf.text(empleadoActual.NOMBRE, 50, 95);
 
     pdf.setFont("helvetica", "bold");
-    pdf.text("Cedula:", 20, 80);
+    pdf.text("Cedula:", 20, 110);
 
     pdf.setFont("helvetica", "normal");
-    pdf.text(String(empleadoActual.CEDULA), 50, 80);
+    pdf.text(String(empleadoActual.CEDULA), 50, 110);
 
     // LINEA
-    pdf.line(20, 80, 190, 80);
+    pdf.line(20, 130, 190, 130);
 
     // TITULO SECCION
     pdf.setFont("helvetica", "bold");
-    pdf.text("INFORMACION BANCO", 20, 95);
+    pdf.text("INFORMACION BANCO", 20, 135);
 
     pdf.setFont("helvetica", "normal");
 
