@@ -222,23 +222,23 @@ async function descargarPDF(){
 
     // DATOS EMPLEADO
     pdf.setFont("helvetica", "bold");
-    pdf.text("Empleado:", 20, 95);
+    pdf.text("Empleado:", 20, 85);
 
     pdf.setFont("helvetica", "normal");
-    pdf.text(empleadoActual.NOMBRE, 50, 95);
+    pdf.text(empleadoActual.NOMBRE, 55, 85);
 
     pdf.setFont("helvetica", "bold");
-    pdf.text("Cedula:", 20, 110);
+    pdf.text("Cedula:", 20, 95);
 
     pdf.setFont("helvetica", "normal");
-    pdf.text(String(empleadoActual.CEDULA), 50, 110);
+    pdf.text(String(empleadoActual.CEDULA), 55, 95);
 
     // LINEA
-    pdf.line(20, 130, 190, 130);
+    pdf.line(20, 105, 190, 105);
 
     // TITULO SECCION
     pdf.setFont("helvetica", "bold");
-    pdf.text("INFORMACION BANCO", 20, 135);
+    pdf.text("INFORMACION BANCO", 20, 120);
 
     pdf.setFont("helvetica", "normal");
 
@@ -246,7 +246,7 @@ async function descargarPDF(){
         "Salario: $" +
         formatoMoneda(empleadoActual.SALARIO),
         20,
-        110
+        135
     );
 
     pdf.text(
@@ -255,7 +255,7 @@ async function descargarPDF(){
             empleadoActual["AUX. TRANSPORTE"]
         ),
         20,
-        120
+        145
     );
 
     pdf.text(
@@ -264,7 +264,7 @@ async function descargarPDF(){
             empleadoActual.RODAMIENTO
         ),
         20,
-        130
+        155
     );
 
     pdf.text(
@@ -273,7 +273,7 @@ async function descargarPDF(){
             empleadoActual["SALUD Y PENSION"]
         ),
         20,
-        140
+        165
     );
 
     pdf.text(
@@ -282,14 +282,14 @@ async function descargarPDF(){
             empleadoActual.DESCUENTOS
         ),
         20,
-        150
+        175
     );
 
     pdf.text(
         "Novedades Banco: " +
         (empleadoActual["NOVEDADES BANCO"] || ""),
         20,
-        160
+        185
     );
 
     // TOTAL DESTACADO
@@ -301,7 +301,7 @@ async function descargarPDF(){
             empleadoActual["TOTAL BANCOS"]
         ),
         20,
-        180
+        205
     );
 
     // PIE DE PAGINA
