@@ -187,12 +187,32 @@ async function descargarPDF(){
 
     let pdf = new jsPDF();
 
+    // CARGAR LOGO
+    const logo = document.querySelector(".logo");
+
+    let canvas = document.createElement("canvas");
+    let ctx = canvas.getContext("2d");
+
+    canvas.width = logo.naturalWidth;
+    canvas.height = logo.naturalHeight;
+
+    ctx.drawImage(logo, 0, 0);
+
+    let logoBase64 = canvas.toDataURL("image/png");
+
+    // INSERTAR LOGO
+    pdf.addImage(
+        logoBase64,
+        "PNG",
+        20,
+        8,
+        70,
+        15
+    );
+
     // ENCABEZADO
     pdf.setFontSize(20);
     pdf.setFont("helvetica", "bold");
-    pdf.text("ALPARTES SAS", 105, 20, { align: "center" });
-
-    pdf.setFontSize(16);
     pdf.text("DESPRENDIBLE DE NOMINA", 105, 30, { align: "center" });
 
     // FECHA
@@ -296,7 +316,7 @@ async function descargarPDF(){
     );
 
     pdf.text(
-        "Desarrollo e implementacion: TU NOMBRE",
+        "Desarrollo e implementacion: Lady Pinzon",
         105,
         282,
         { align: "center" }
