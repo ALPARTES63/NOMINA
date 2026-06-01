@@ -213,25 +213,25 @@ async function descargarPDF(){
     // ENCABEZADO
     pdf.setFontSize(20);
     pdf.setFont("helvetica", "bold");
-    pdf.text("DESPRENDIBLE DE NOMINA", 105, 55, { align: "center" });
+    pdf.text("DESPRENDIBLE DE NOMINA", 105, 60, { align: "center" });
 
     // FECHA
     pdf.setFontSize(11);
     pdf.setFont("helvetica", "normal");
-    pdf.text("Fecha de pago: 05/06/2026", 20, 45);
+    pdf.text("Fecha de pago: 05/06/2026", 20, 50);
 
     // DATOS EMPLEADO
     pdf.setFont("helvetica", "bold");
-    pdf.text("Empleado:", 20, 60);
+    pdf.text("Empleado:", 20, 70);
 
     pdf.setFont("helvetica", "normal");
-    pdf.text(empleadoActual.NOMBRE, 50, 60);
+    pdf.text(empleadoActual.NOMBRE, 50, 70);
 
     pdf.setFont("helvetica", "bold");
-    pdf.text("Cedula:", 20, 70);
+    pdf.text("Cedula:", 20, 80);
 
     pdf.setFont("helvetica", "normal");
-    pdf.text(String(empleadoActual.CEDULA), 50, 70);
+    pdf.text(String(empleadoActual.CEDULA), 50, 80);
 
     // LINEA
     pdf.line(20, 80, 190, 80);
