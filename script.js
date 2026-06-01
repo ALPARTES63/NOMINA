@@ -202,18 +202,18 @@ async function descargarPDF(){
 
     // INSERTAR LOGO
     pdf.addImage(
-        logoBase64,
-        "PNG",
-        20,
-        8,
-        70,
-        15
+    logoBase64,
+    "PNG",
+    25,
+    8,
+    160,
+    35
     );
 
     // ENCABEZADO
     pdf.setFontSize(20);
     pdf.setFont("helvetica", "bold");
-    pdf.text("DESPRENDIBLE DE NOMINA", 105, 30, { align: "center" });
+    pdf.text("DESPRENDIBLE DE NOMINA", 105, 55, { align: "center" });
 
     // FECHA
     pdf.setFontSize(11);
