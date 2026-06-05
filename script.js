@@ -139,6 +139,13 @@ function buscarEmpleado(){
         <h3>INFORMACIÓN EFECTIVO</h3>
 
         <p>
+        <b>Comisiones Totales:</b>
+        $${formatoMoneda(
+            empleado["COMISIONES TOTALES"]
+        )}
+        </p>
+        
+        <p>
         <b>Comisiones Efectivo:</b>
         $${formatoMoneda(
             empleado["COMISIONES EFECTIVO"]
