@@ -116,6 +116,13 @@ function buscarEmpleado(){
         </p>
 
         <p>
+        <b>Bono Banco:</b>
+        $${formatoMoneda(
+            empleado["BONO BANCO"]
+        )}
+        </p>
+
+        <p>
         <b>Descuentos:</b>
         $${formatoMoneda(
             empleado.DESCUENTOS
